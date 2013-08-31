@@ -440,6 +440,19 @@ nav {
 #posts-list article .meta a {
   color: #cb5432;
 }
+/* ERROR PAGES ------------------------------------------------------------*/
+.error {
+  position: relative;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  overflow: ;
+}
+/* iPhone Verticle */ 
+@media screen and (max-width: 480px) {
+.error { 
+	display: none;
+	} 
+}      
 /* PAGE NAVIGATION ------------------------------------------------------------*/
 #main .page-navigation {
   position: relative;
