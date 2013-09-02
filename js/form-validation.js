@@ -26,11 +26,11 @@ jQuery(document).ready(function($){
 			return false;
 		}
 		
-		// web
-		var web = $("input#web").val();
-		if(web == ""){
-			$("#error").fadeIn().text("Web required");
-			$("input#web").focus();
+		// phone
+		var phone = $("input#phone").val();
+		if(phone == ""){
+			$("#error").fadeIn().text("Phone required");
+			$("input#phone").focus();
 			return false;
 		}
 		
@@ -48,7 +48,7 @@ jQuery(document).ready(function($){
 		// data string
 		var dataString = 'name='+ name
 						+ '&email=' + email        
-						+ '&web=' + web
+						+ '&phone=' + phone
 						+ '&comments=' + comments
 						+ '&to=' + to
 						+ '&from=' + from
