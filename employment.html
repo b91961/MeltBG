@@ -9,7 +9,7 @@
 	
 	
 	
-	<title>Melt Shoppe | Gastro Pub with Fine Grub | Americana and Fusion Cuisine accompanied with Fine Wines and Craft Beer | Employment</title>
+	<title>Melt Shoppe | Gastro Pub with Fine Grub | Americana and Fusion Cuisine accompanied with Fine Wines and Craft Beer | Contact</title>
 	<meta name="description" content="The Melt Shoppe is a fusion of the past and present. The namesake pays homage to the prohibition era of Chocolate Shoppe's that featured fine foods and desserts while covertly whetting the palates of the masses with bootleg spirits. Prohibition is officially over with the opening of the Melt Shoppe in historic downtown Bowling Green! " />
     <meta name="keywords" content="Melt, Shoppe, BG, Bowling Green, College, Restaurant, Jack Daniels, gastropub, Bar, Grille, Grill, americana, fusion, open late, breakfast, menu, lunch, dinner, clazel, clark, hazel, do good, the melt, catering, corporate, venue, ohio, toledo, findlay, perrysburg, Wine, craft beer, fine dining, bowling green state university, BGSU" />
 	
@@ -48,7 +48,7 @@
 					<li><a href="#">ABOUT<i><b></b></i></a>
 						<ul>
 							<li><a href="about.html">About Us</a></li>
-							<li><a href="http://www.clazel.net/About_Do_Good.html">Do Good</a></li>
+							<li><a href="#" onclick="window.open('http://www.clazel.net/About_Do_Good.html','_blank','location=yes')">Do Good</a></li>
 							<li><a href="featured.html">Featured</a></li>
 							<li><a href="employment.html">Employment</a></li>
 						</ul>
@@ -58,12 +58,13 @@
 					<li><a href="#">GROUPS AND MEETINGS<i><b></b></i></a>
 						<ul>
 							<li><a href="group.html">Group Events</a></li>
-							<li><a href="http://www.clazel.net/BG_Event_Packages.html">Meetings</a></li>
-							<li><a href="http://www.clazel.net/Bowling_Green_Weddings.html">Weddings</a></li>
-							<li><a href="http://www.clazel.net/BG_Special_Events.html">Rentals</a></li>
+							<li><a href="#" onclick="window.open('http://www.clazel.net/BG_Event_Packages.html','_blank','location=yes')">Meetings</a></li>
+							<li><a href="#" onclick="window.open('http://www.clazel.net/Bowling_Green_Weddings.html','_blank','location=yes')">Weddings</a></li>
+							<li><a href="#" onclick="window.open('http://www.clazel.net/BG_Special_Events.html','_blank','location=yes')">Rentals</a></li>
 						</ul>
 					</li>
 					<li><a href="contact.html">CONTACT<i><b></b></i></a></li>
+
 				</ul>
 				<div id="combo-holder"></div>
 			</div>
@@ -78,36 +79,46 @@
 	<div role="main" id="main">
 		<div class="wrapper">
 		
-			<!-- Page Content -->	
-			<div data-role="content">
+			<!-- page-content -->
+			<div class="page-content">					
 			
-				<!-- Begin Lightbox -->
-			        <div id="fsLightbox1564676" class="fsLightbox" style="display:none;">
-			        <div align="right" style="padding-bottom:5px;"><a id="fsLightboxClose1564676" href="#" title="close"><img src="http://www.formstack.com/forms/images/2/cross.gif" border="0" /></a></div>
-			        <div id="fsLightboxContent1564676" style="height:450px; width:650px; padding-top:0px; overflow:auto;">
-			        <script type="text/javascript" src="http://www.formstack.com/forms/js.php?1564676-BaYHDAtK1T-v3"></script>
-			        <div style="text-align:right; font-size:x-small;"><a href="http://www.formstack.com?utm_source=h&utm_medium=jsembed&utm_campaign=fa&fa=h,1564676" title="Contact Form Generator">Contact Form Generator</a></div>
-			        </div>
-			        </div>
-			
-			        <script type="text/javascript" src="http://www.formstack.com/forms/js/lightbox.js"></script>
-			        <script type="text/javascript">
-			            var fsLightbox1564676 = new FSLightbox({form: 1564676,
-			                handleText: "Melt Shoppe  Job Application", handlePosition: "left", handleImage: "http://www.formstack.com/forms/lightboxHandle.php?str=Melt+Shoppe++Job+Application",
-			                handle: null
-			            });
-			        </script>
-			        <!-- Use fsLightbox1564676.show() or set handle: "ID" to open lightbox without using predefined handle -->
-			        <!-- End Lightbox -->
-			
-			</div>
-				
-				<div class="c-1"></div>
-				<div class="c-2"></div>
-				<div class="c-3"></div>
-				<div class="c-4"></div>
-			</div><!-- ENDS page-content -->
-				
+				<h2 class="heading">Employment Contact Form</h2>
+				<!-- form -->
+				<form id="contactForm" action="#" method="post">
+					<fieldset>
+														
+						<p>
+							<label for="name" >Name</label>
+							<input name="name"  id="name" type="text" class="form-poshytip" title="Enter your full name" />
+						</p>
+						
+						<p>
+							<label for="email" >Email</label>
+							<input name="email"  id="email" type="text" class="form-poshytip" title="Enter your email address" />
+						</p>
+						
+						<p>
+							<label for="web">Phone #</label>
+							<input name="phone"  id="phone" type="text" class="form-poshytip" title="Enter your phone #" />
+						</p>
+						
+						<p>
+							<label for="comments">Message</label>
+							<textarea  name="comments"  id="comments" rows="5" cols="20" class="form-poshytip" placeholder="Please enter the position you are applying for, the date your available and any other comments here." title="Enter your comments"></textarea>
+						</p>
+						
+						<!-- send mail configuration -->
+						<input type="hidden" value="jamal@eskatech.com" name="to" id="to" />
+						<input type="hidden" value="Melt Shoppe Employment Application" name="subject" id="subject" />
+						<input type="hidden" value="send-mail.php" name="sendMailUrl" id="sendMailUrl" />
+						<!-- ENDS send mail configuration -->
+						
+						<p><input type="button" value="Send" name="submit" id="submit" /> <span id="error" class="warning">Message</span></p>
+					</fieldset>
+					
+				</form>
+				<p id="sent-form-msg" class="success">Form data sent. Thanks for your comments.</p>
+				<!-- ENDS form -->	
 				<div class="c-1"></div>
 				<div class="c-2"></div>
 				<div class="c-3"></div>
@@ -130,39 +141,41 @@
 			<!-- social -->
 			<div class="sb-holder cf">
 				<ul id="social-bar" class="cf">
-					<li class="left-corner"><i></i></li>
-					<li><a href="http://www.facebook.com"  title="Become a fan" ><img src="img/social/Facebook.png"  alt="Facebook" /></a></li>
-					<li><a href="http://www.twitter.com/MeltBG" title="Follow my tweets" ><img src="img/social/Twitter.png"  alt="twitter" /></a></li>
-					<li><a href="http://www.google.com"  title="Add to the circle" ><img src="img/social/Google+.png" alt="Google plus" /></a></li>
+					<li class="left-corner"><i></i></li>		
+					<li><a href="#" title="Become a fan" onclick="window.open('http://www.facebook.com','_blank','location=yes')"><img src="img/social/Facebook.png"  alt="Facebook" /></a></li>
+					<li><a href="#" title="Follow my tweets" onclick="window.open('http://www.twitter.com/MeltBG','_blank','location=yes')"><img src="img/social/Twitter.png"  alt="twitter" /></a></li>
+					<li><a href="#" title="Add to the circle" onclick="window.open('http://www.plus.google.com','_blank','location=yes')"><img src="img/social/Google+.png" alt="Google plus" /></a></li>
+					
 					<li class="right-corner"><i></i></li>
 				</ul>
 				
 				
 			</div>
 			<!-- ENDS social -->
-	
-		<!-- widgets -->
+			
+			
+			<!-- widgets -->
 			<ul  class="widget-cols cf">
 				<li class="first-col">
-					
+
 					<div class="widget-block">
 						<h4>SPONSERS</h4>
 						<div class="recent-post cf">
-							<a href="http://www.clazel.net" class="thumb"><img src="img/dummies/54x54b.gif" alt="Post" /></a>
+							<a href="#" class="thumb" onclick="window.open('http://www.clazel.net','_blank','location=yes')"><img src="img/dummies/54x54b.gif" alt="Post" /></a>
 							<div class="post-head">
-								<a href="http://www.clazel.net">Clazel </a>
+								<a href="#" onclick="window.open('http://www.clazel.net','_blank','location=yes')">Clazel</a>
 							</div>
 						</div>
 						<div class="recent-post cf">
-							<a href="http://www.jpeg-design.com" class="thumb"><img src="img/dummies/54x54.gif" alt="Post" /></a>
+							<a href="#" class="thumb" onclick="window.open('http://www.jpeg-design.com','_blank','location=yes')"><img src="img/dummies/54x54.gif" alt="Post" /></a>
 							<div class="post-head">
-								<a href="http://www.jpeg-design.com">jPeg Design </a>
+								<a href="#" onclick="window.open('http://www.jpeg-design.com','_blank','location=yes')">jPeg Design</a>
 							</div>
 						</div>
 						<div class="recent-post cf">
-							<a href="http://www.eskatech.com" class="thumb"><img src="img/dummies/54x54c.gif" alt="Post" /></a>
+							<a href="#" class="thumb" onclick="window.open('http://www.eskatech.com','_blank','location=yes')"><img src="img/dummies/54x54c.gif" alt="Post" /></a>
 							<div class="post-head">
-								<a href="http://www.eskatech.com">Eskatech Surveillance </a>
+								<a href="#" onclick="window.open('http://www.eskatech.com','_blank','location=yes')">Eskatech Surveillance</a>
 							</div>
 						</div>
 					</div>
@@ -180,25 +193,25 @@
 				</li>
 				
 				<li class="third-col">
-					
+
 					<div class="widget-block">
 						<h4>SOCIAL</h4>
 						<div class="recent-post cf">
-							<a href="http://www.facebook.com/MeltBG" class="thumb"><img src="img/social/Facebook.png" alt="Post" /></a>
+							<a href="#" class="thumb" onclick="window.open('http://www.facebook.com/MeltBG','_blank','location=yes')"><img src="img/social/Facebook.png" alt="Post" /></a>
 							<div class="post-head">
-								<a href="http://www.facebook.com/MeltBG">facebook.com/MeltBG </a>
+								<a href="#" onclick="window.open('http://www.facebook.com/MeltBG','_blank','location=yes')">facebook.com/MeltBG</a>
 							</div>
 						</div>
 						<div class="recent-post cf">
-							<a href="http://www.twitter.com/MeltBG" class="thumb"><img src="img/social/Twitter.png" alt="Post" /></a>
+							<a href="#" class="thumb" onclick="window.open('http://www.twitter.com/MeltBG','_blank','location=yes')"><img src="img/social/Twitter.png" alt="Post" /></a>
 							<div class="post-head">
-								<a href="http://www.twitter.com/MeltBG">twitter.com/MeltBG </a>
+								<a href="#" onclick="window.open('http://www.twitter.com/MeltBG','_blank','location=yes')">twitter.com/MeltBG</a>
 							</div>
 						</div>
 						<div class="recent-post cf">
-							<a href="http://https://plus.google.com" class="thumb"><img src="img/social/Google+.png" alt="Post" /></a>
+							<a href="#" class="thumb" onclick="window.open('https://plus.google.com','_blank','location=yes')"><img src="img/social/Google+.png" alt="Post" /></a>
 							<div class="post-head">
-								<a href="http://https://plus.google.com">plus.google.com </a>
+								<a href="#" onclick="window.open('https://plus.google.com','_blank','location=yes')">plus.google.com</a>	
 							</div>
 						</div>
 					</div>
@@ -214,7 +227,7 @@
 							<li class="cat-item"><a href="about.html" >About</a></li>
 							<li class="cat-item"><a href="menu.html" >Menu</a></li>
 							<li class="cat-item"><a href="photos.html" >Photos and Events</a></li>
-							<li class="cat-item"><a href="#" >Groups and Meetings</a></li>
+							<li class="cat-item"><a href="group.html" >Groups and Meetings</a></li>
 							<li class="cat-item"><a href="contact.html" >Contact</a></li>
 						</ul>
 					</div>
@@ -268,7 +281,12 @@
 	<script src="js/css3-mediaqueries.js"></script>
 	<script src="js/tabs.js"></script>
 	<script  src="js/poshytip-1.1/src/jquery.poshytip.min.js"></script>
+	<script type="text/javascript" src="js/form-validation.js"></script>
 	<!-- end scripts -->
-
+	
+	<!-- Start google map -->
+	<script>initialize();</script>
+	
+		
 </body>
 </html>
